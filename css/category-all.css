@@ -1,0 +1,44 @@
+.category {
+  padding: 18px 0 55px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.category__title {
+  width: 100%;
+  font-size: 35px;
+  margin-bottom: 75px;
+  text-align: center;
+}
+
+.good {
+  display: inline-block;
+  text-align: center;
+}
+
+.good__container {
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #eaeaea;
+}
+
+.good__img {
+  max-width: 209px;
+  max-height: 260px;
+}
+
+.good__title {
+  margin-bottom: 5px;
+}
+
+.advice-text {
+  padding: 0 0 45px;
+  text-align: center;
+  font-size: 24px;
+}
