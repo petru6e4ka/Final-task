@@ -42,3 +42,11 @@
   text-align: center;
   font-size: 24px;
 }
+
+@media screen and (max-width: 1023px) {
+  .good {
+    width: 35%;
+    overflow: hidden;
+    margin-bottom: 25px;
+  }
+}
