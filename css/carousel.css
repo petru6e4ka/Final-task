@@ -1,0 +1,82 @@
+.inspirations {
+  position: relative;
+  text-align: left;
+}
+
+.inspirations__img {
+  display: block;
+  width: 200px;
+  height: 120px;
+}
+
+.inspirations__arrow {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 40px;
+  height: 100%;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+  line-height: 24px;
+  background: #e4e4e4;
+  border: 1px solid transparent;
+  z-index: 2;
+}
+
+.inspirations__arrow:focus {
+  outline: none;
+}
+
+.inspirations__arrow:hover {
+  background: #bbb;
+  cursor: pointer;
+}
+
+.inspirations__prev {
+  left: 0;
+}
+
+.inspirations__prev::before,
+.inspirations__next::before {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 3px solid #fff;
+  content: "";
+}
+
+.inspirations__prev::before {
+  margin-left: 10px;
+  border-left: 3px solid #fff;
+  transform: rotate(45deg);
+}
+
+.inspirations__next {
+  right: 0;
+}
+
+.inspirations__next::before {
+  border-right: 3px solid #fff;
+  transform: rotate(-45deg);
+}
+
+.inspirations__gallery {
+  width: 100%;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.inspirations__list {
+  width: 9999px;
+  height: 120px;
+  position: relative;
+  left: 40px;
+  z-index: 1;
+  list-style: none;
+  transition: left 250ms;
+}
+
+.inspirations__item {
+  display: inline-block;
+}

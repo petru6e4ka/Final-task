@@ -1,0 +1,122 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 45px;
+}
+
+.additional-info__header {
+  margin-bottom: 8px;
+}
+
+.additional-info {
+  padding-left: 20px;
+  border-left: 1px solid #eaeaea;
+}
+
+.additional-info:first-of-type {
+  padding-left: 0;
+  border-left: none;
+}
+
+.additional-info__link {
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 12px;
+}
+
+.additional-info__link:hover {
+  text-decoration: underline;
+}
+
+.additional-info__text {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.additional-info__list-social {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.additional-info__item-social {
+  margin-right: 10px;
+}
+
+.additional-info__link-social {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #606060;
+}
+
+.additional-info__link-social:hover {
+  background: #606060;
+}
+
+.additional-info__link-social::before {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 9px;
+  content: "";
+}
+
+.additional-info__link-tweet::before {
+  background: url(../img/sprites.png) no-repeat;
+  background-position: 0 -20px;
+}
+
+.additional-info__link-tweet:hover::before {
+  background-position: 0 -40px;
+}
+
+.additional-info__link-facebook::before {
+  margin: 9px 0 9px 14px;
+  background: url(../img/sprites.png) no-repeat;
+  background-position: -20px -20px;
+}
+
+.additional-info__link-facebook:hover::before {
+  background-position: -20px -40px;
+}
+
+.additional-info__link-insta::before {
+  background: url(../img/sprites.png) no-repeat;
+  background-position: -40px -20px;
+}
+
+.additional-info__link-insta:hover::before {
+  background-position: -40px -40px;
+}
+
+@media screen and (max-width: 1023px) {
+  .additional-info {
+    display: none;
+  }
+
+  footer .additional-info:last-of-type {
+    display: block;
+    margin: 0 auto;
+    padding-left: 0;
+    text-align: center;
+    border-left: none;
+  }
+
+  .additional-info__item-social {
+    margin-right: 15px;
+  }
+
+  .additional-info__header {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-family: "Lato Bold";
+    letter-spacing: 5px;
+  }
+
+  .additional-info__text {
+    margin-bottom: 35px;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+}

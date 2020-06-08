@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Lato Regular";
+  src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato Bold";
+  src: url("../fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Lato Italic";
+  src: url("../fonts/Lato-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Georgia Italic";
+  src: url("../fonts/georgiai.ttf");
+}
+
+body {
+  color: #303030;
+  font-family: "Lato Regular", sans-serif;
+  background: #e5e5e5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: "Lato Bold", sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #303030;
+  text-decoration: none;
+}
+
+blockquote {
+  margin: 0;
+}
+
+input {
+  font-family: "Lato Italic", sans-serif;
+  border: 1px solid #959595;
+}
+
+@media screen and (max-width: 1239px) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Lato Regular", sans-serif;
+  }
+}
+
+/*
+ * General rules
+*/
+
+.container {
+  max-width: 1176px;
+  min-width: 310px;
+  margin: 0 auto;
+  padding: 0 32px;
+  background: #fff;
+}
+
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.desc-text {
+  color: #606060;
+  font-family: "Georgia Italic", serif;
+}
+
+.btn {
+  padding: 18px 32px;
+  color: #fff;
+  text-transform: uppercase;
+  background: #f68236;
+  border: 1px solid #e67429;
+}
+
+.btn:hover {
+  background: #e67429;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:active,
+.btn:focus {
+  background: #008000;
+  border-color: #008000;
+  outline: none;
+  cursor: pointer;
+}

@@ -1,0 +1,38 @@
+.breadcrumbs {
+  padding: 32px 0;
+  list-style: none;
+  text-align: left;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+}
+
+.breadcrumbs__item::after {
+  content: "/";
+  margin: 0 2px;
+}
+
+.breadcrumbs__item:last-child::after {
+  content: "";
+}
+
+.breadcrumbs__link {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs__link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1023px) {
+  .breadcrumbs {
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .breadcrumbs__link {
+    font-size: 16px;
+  }
+}

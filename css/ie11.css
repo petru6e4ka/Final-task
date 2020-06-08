@@ -1,0 +1,14 @@
+@media screen and (-ms-high-contrast: none) and (max-width: 767px) {
+  .logo,
+  .basket {
+    top: 0;
+  }
+
+  .search-form__label {
+    top: -15px;
+  }
+
+  .search-form__input-expanded ~ .search-form__label {
+    top: 60px;
+  }
+}

@@ -1,0 +1,249 @@
+/*
+ * Hero
+*/
+
+.hero {
+  padding: 134px 0 155px 0;
+  text-align: center;
+}
+
+.hero__title {
+  margin-bottom: 28px;
+  font-size: 70px;
+}
+
+.hero__text {
+  margin-bottom: 88px;
+  font-size: 27px;
+}
+
+.hero__link {
+  padding: 18px 28px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid #959595;
+}
+
+.hero__link:hover,
+.hero__link:active,
+.hero__link:focus {
+  color: #fff;
+  background: #606060;
+}
+
+@media screen and (max-width: 1023px) {
+  .hero {
+    padding: 0;
+  }
+
+  .hero__text {
+    margin-bottom: 50px;
+  }
+
+  .hero__link {
+    display: none;
+  }
+}
+
+/*
+ * Squares
+*/
+
+.new-arrival,
+.current-products {
+  position: relative;
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.square {
+  position: relative;
+  font-size: 0;
+}
+
+.square__img {
+  width: 100%;
+}
+
+.square__content {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-family: "Lato Bold", sans-serif;
+  text-align: center;
+}
+
+.square__content-category {
+  position: absolute;
+  top: 0;
+  display: none;
+  text-align: center;
+  background: #606060;
+}
+
+.square__title {
+  margin-bottom: 5px;
+  padding: 0 10%;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+.square__text {
+  padding: 0 10%;
+  font-size: 20px;
+  font-family: "Georgia Italic", serif;
+  text-transform: uppercase;
+}
+
+.quote {
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Georgia Italic", serif;
+  text-align: center;
+}
+
+.quote__content {
+  margin-bottom: 20px;
+  padding: 0 10%;
+}
+
+.quote__content::before {
+  display: block;
+  width: 100px;
+  height: 30px;
+  margin: 0 auto 25px;
+  background: url(../img/sprites.png) no-repeat;
+  background-position: 0 -60px;
+  content: "";
+}
+
+.quote__author {
+  font-family: "Lato Bold", sans-serif;
+  font-style: normal;
+}
+
+.square__overlay {
+  position: absolute;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #d2d2d2;
+}
+
+.square__content-icon::before {
+  display: block;
+  width: 20px;
+  height: 13px;
+  margin: 0 auto 15px;
+  background: url(../img/sprites.png) no-repeat;
+  background-position: -60px 0;
+  content: "";
+}
+
+.square:hover .square__content-category,
+.square:hover .square__overlay,
+.new-arrival:hover .square__overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .new-arrival,
+  .current-products {
+    float: none;
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .square {
+    height: 230px;
+  }
+
+  .square__title {
+    margin-bottom: 8px;
+    font-size: 23px;
+    letter-spacing: 2px;
+  }
+
+  .square__text {
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .new-arrival,
+  .current-products {
+    width: 100%;
+  }
+}
+
+/*
+ * Sign-up
+*/
+
+.sign-up {
+  padding: 80px 0 75px 0;
+  text-align: center;
+}
+
+.sign-up__title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+.sign-up__text {
+  margin-bottom: 54px;
+  font-size: 20px;
+}
+
+.sign-up__input {
+  width: 40%;
+  padding: 18px 8px;
+  outline: none;
+}
+
+.sign-up__input:hover,
+.sign-up__input:active,
+.sign-up__input:focus {
+  outline: none;
+}
+
+.sign-up__btn {
+  margin-left: -4px;
+  text-transform: lowercase;
+}
+
+@media screen and (max-width: 1023px) {
+  .sign-up__input {
+    width: 65%;
+    font-size: 18px;
+  }
+
+  .sign-up__btn {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sign-up__title {
+    margin-bottom: 15px;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+
+  .sign-up__text {
+    font-size: 18px;
+  }
+}

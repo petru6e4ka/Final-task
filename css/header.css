@@ -1,0 +1,230 @@
+.main-nav {
+  padding: 30px 0 40px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+  float: left;
+  margin-right: 35px;
+  background: #222;
+}
+
+.site-nav {
+  float: left;
+}
+
+.navigation__item {
+  float: left;
+}
+
+.navigation__link {
+  display: inline-block;
+  padding: 0 24px;
+  line-height: 46px;
+}
+
+.navigation__link:hover {
+  text-decoration: underline;
+}
+
+.logo__link {
+  display: inline-block;
+  padding: 0 10px;
+  color: #fff;
+  line-height: 46px;
+}
+
+.logo__link:hover {
+  background: #606060;
+}
+
+.search-form {
+  display: inline-flex;
+  float: right;
+  margin-right: 0;
+}
+
+.search-form__input {
+  width: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 1;
+  border: none;
+  transition: 0.3s;
+}
+
+.search-form__input-expanded {
+  width: 150px;
+  padding: 12px 14px;
+  border: 1px solid #959595;
+  transition: 0.3s;
+}
+
+.search-form__label {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: -1px;
+  border: 1px solid #959595;
+}
+
+.search-form__label::after {
+  position: absolute;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  margin: 10px 10px;
+  background: url(../img/sprites.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  content: "";
+}
+
+.search-form__input:hover,
+.search-form__input:focus,
+.search-form__input:active {
+  outline: none;
+}
+
+.search-form__input-expanded ~ .search-form__label,
+.search-form__label:hover,
+.search-form__label:focus,
+.search-form__label:active,
+.search-form__input:hover ~ .search-form__label,
+.search-form__input:focus ~ .search-form__label,
+.search-form__input:active ~ .search-form__label {
+  background: #606060;
+  cursor: pointer;
+}
+
+.search-form__input-expanded ~ .search-form__label::after,
+.search-form__label:hover::after,
+.search-form__label:focus::after,
+.search-form__label:active::after,
+.search-form__input:hover ~ .search-form__label::after,
+.search-form__input:focus ~ .search-form__label::after,
+.search-form__input:active ~ .search-form__label::after {
+  background-position: -40px 0;
+}
+
+.basket {
+  float: right;
+}
+
+.navigation__link-iconed {
+  display: inline-block;
+  padding-left: 15px;
+}
+
+.navigation__link-iconed::before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0 10px;
+  background: url(../img/sprites.png);
+  background-repeat: no-repeat;
+  background-position: -20px 0;
+  content: "";
+}
+
+@media screen and (max-width: 1023px) {
+  .main-nav {
+    position: relative;
+    padding-top: 20px;
+    border-bottom: 0;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .logo__link {
+    padding: 4px 20px;
+    line-height: 50px;
+  }
+
+  .site-nav {
+    width: 100%;
+    clear: both;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .navigation__item {
+    width: 100%;
+    clear: both;
+    text-align: center;
+  }
+
+  .navigation__link {
+    padding: 4px 24px;
+    line-height: 50px;
+    font-size: 18px;
+  }
+
+  .navigation__link-iconed {
+    padding: 0;
+  }
+
+  .basket {
+    position: absolute;
+    right: 0;
+    width: 140px;
+    margin-top: 10px;
+    text-align: right;
+  }
+
+  .search-form {
+    position: absolute;
+    right: 140px;
+    margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    position: absolute;
+    clear: both;
+    margin: 0;
+  }
+
+  .search-form {
+    width: 100%;
+    margin-bottom: 25px;
+    position: static;
+    clear: both;
+    order: 1;
+  }
+
+  .basket {
+    clear: both;
+    order: 2;
+  }
+
+  .site-nav {
+    order: 3;
+  }
+
+  .search-form__label {
+    left: 46%;
+  }
+
+  .search-form__input-expanded {
+    font-size: 12px;
+    margin-top: 60px;
+    width: 90%;
+  }
+
+  .search-form__input-expanded ~ .search-form__label {
+    top: 60px;
+    left: 0;
+  }
+}

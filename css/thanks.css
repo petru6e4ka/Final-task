@@ -1,0 +1,27 @@
+.thanks {
+  padding: 200px 0 115px 0;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.thanks__title {
+  margin-bottom: 28px;
+  font-size: 70px;
+  font-family: "Lato Regular";
+  letter-spacing: -1px;
+}
+
+.thanks__text {
+  margin-bottom: 88px;
+  font-size: 27px;
+}
+
+@media screen and (max-width: 1023px) {
+  .thanks {
+    padding: 13px 0;
+  }
+
+  .thanks__text {
+    margin-bottom: 37px;
+  }
+}
