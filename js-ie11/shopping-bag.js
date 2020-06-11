@@ -10,7 +10,10 @@ function basketQty() {
 
   if (purchasesQty) {
     for (var key = 0; key < purchasesQty.length; key++) {
-      qty += parseInt(purchasesQty[key].value, decimal);
+      const toSum = parseInt(purchasesQty[key].value, decimal);
+      if(toSum > 0) {
+        qty += toSum;
+      }
     }
   }
 
@@ -23,6 +26,7 @@ function inputEvents() {
   if (purchasesQty) {
     for (var key = 0; key < purchasesQty.length; key++) {
       purchasesQty[key].addEventListener('change', basketQty);
+      purchasesQty[key].addEventListener('keyup', basketQty);
     }
   }
 }
